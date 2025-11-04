@@ -11,12 +11,10 @@ def home():
     <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/info">Info</a></li>
+        <li><a href="/todos">Todos</a></li>
     </ul>
 
-    <p>Send POST data to /echo route</p>
-    <form method="POST" action="/echo">
-    <button>Submit</button>
-    </form>
+    <p>Also try sending POST data to /echo route with your favorite Postman</p>
 
     """
 
