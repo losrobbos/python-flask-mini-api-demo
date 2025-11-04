@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
@@ -40,5 +41,5 @@ def echo():
 
 # Nur ausführen, wenn Datei direkt gestartet wird
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8000, debug=True)
+    app.run(host="0.0.0.0", port=os.environ.get("PORT", 8000), debug=True)
 
