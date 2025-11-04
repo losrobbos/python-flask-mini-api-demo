@@ -44,7 +44,10 @@ def echo():
     }), 200
 
 
-# Nur ausführen, wenn Datei direkt gestartet wird
+
+port = os.environ.get("PORT", 8000)
+
+# Nur ausführen, wenn Datei direkt (!) gestartet wird (also wenn diese Datei das Entry Script ist)
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=os.environ.get("PORT", 8000), debug=True)
+    app.run(host="0.0.0.0", port=port, debug=False)
 
