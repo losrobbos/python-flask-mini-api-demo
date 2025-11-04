@@ -5,6 +5,22 @@ app = Flask(__name__)
 # --- GET Route ---
 @app.get("/")
 def home():
+    return """<h1>Da ist eine crazy Überschrift<h1>
+    <h2>Pages:</h2>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/info">Info</a></li>
+    </ul>
+
+    <p>Send POST data to /echo route</p>
+    <form method="POST" action="/echo">
+    <button>Submit</button>
+    </form>
+
+    """
+
+@app.get("/info")
+def info():
     return "Hallo! Dies ist eine einfache Flask-App 🚀"
 
 # --- POST Route ---
@@ -24,5 +40,5 @@ def echo():
 
 # Nur ausführen, wenn Datei direkt gestartet wird
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=8000, debug=True)
 

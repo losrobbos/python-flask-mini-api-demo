@@ -1,7 +1,12 @@
-GET http://127.0.0.1:5000
+@BASE_URL = http://127.0.0.1:8000
 
-###
-POST http://127.0.0.1:5000/echo
+GET {{BASE_URL}}
+
+### Info Route
+GET {{BASE_URL}}/info
+
+### Post sample route
+POST {{BASE_URL}}/echo
 Content-Type: application/json
 
 {"name": "Alice", "sprache": "Python"}
