@@ -5,6 +5,9 @@ GET {{BASE_URL}}
 ### Info Route
 GET {{BASE_URL}}/info
 
+### JSON Data Route
+GET {{BASE_URL}}/todos
+
 ### Post sample route
 POST {{BASE_URL}}/echo
 Content-Type: application/json

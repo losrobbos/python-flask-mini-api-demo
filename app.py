@@ -24,6 +24,11 @@ def home():
 def info():
     return "Hallo! Dies ist eine einfache Flask-App 🚀"
 
+@app.get("/todos")
+def todos():
+    # Antwort zurückgeben
+    return jsonify(["Wake the dog", "Empty the trash", "Tame some python"]), 200
+
 # --- POST Route ---
 @app.post("/echo")
 def echo():
