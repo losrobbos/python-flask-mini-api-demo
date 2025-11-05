@@ -33,6 +33,9 @@ Now install all package requirements, like Flask, for this project:
 
 `pip install -r requirements.txt`
 
+PIP is the Python Package Installer. Just like "npm" in Node.
+And instead of a package.json file we got a plain textfile "requirements.txt" where all dependencies / needed packages are listed flat.
+
 Now it should install Flask and all it's dependencies into your local "venv" folder.
 
 You can check the installed packages:
