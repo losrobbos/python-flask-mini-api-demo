@@ -50,7 +50,7 @@ Now run the project:
 
 `python app.py`
 
-It should start an API on http://127.0.0.1:5000
+It should start an API on http://127.0.0.1:8000
 
 When you go there, you should see a welcome message.
 
