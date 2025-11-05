@@ -51,3 +51,11 @@ When you go there, you should see a welcome message.
 By the way:
 Also to START the app, you need the "venv" activates. Otherwises Python will look for the dependencies GLOBALLY on your system and will likely not find it there.
 So always activate the venv before you start the project (see steps in "activate environment" above)
+
+## Wenn Docker bei euch läuft
+
+Image builden:
+`docker build -t python-flask-demo .`
+
+Container starten:
+`docker run python-flask-demo`
