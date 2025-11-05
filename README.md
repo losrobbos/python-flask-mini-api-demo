@@ -66,5 +66,5 @@ So always activate the venv before you start the project (see steps in "activate
 Image builden:
 `docker build -t python-flask-demo .`
 
-Container starten:
-`docker run python-flask-demo`
+Container starten (gibt internern Port 8000 auch auf dem Laptop auf Port 8000 frei => der Browser kann rankommen):
+`docker run -p 8000:8000 python-flask-demo`
