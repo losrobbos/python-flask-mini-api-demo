@@ -56,8 +56,9 @@ It should start an API on http://127.0.0.1:8000
 
 When you go there, you should see a welcome message.
 
-By the way:
-Also to START the app, you need the "venv" activates. Otherwises Python will look for the dependencies GLOBALLY on your system and will likely not find it there.
+By the way: Also to START the app, you need the "venv" activated. Not just during installation!
+
+Otherwises Python will look for the dependencies GLOBALLY on your system and will likely not find it there.
 So always activate the venv before you start the project (see steps in "activate environment" above)
 
 ## Wenn Docker bei euch läuft
