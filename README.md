@@ -1,6 +1,8 @@
 # Python API Mini Demo
 
-This project uses the lib "Flask" to build a simple REST API
+This project uses the lib "Flask" to build a simple REST API.
+
+Flask is very similar to the package "express" in Node.
 
 ## Prep - create environment
 
