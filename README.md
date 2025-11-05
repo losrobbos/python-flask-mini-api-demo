@@ -4,7 +4,7 @@ This project uses the lib "Flask" to build a simple REST API
 
 ## Prep - create environment
 
-After clonsing this repository:
+After cloning this repository:
 Create a virtual environment where all packages, like Flask, will get installed to:
 
 `python -m venv venv`
