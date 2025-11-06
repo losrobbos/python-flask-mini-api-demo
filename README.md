@@ -88,7 +88,9 @@ This command should print some (quite lengthy) hello world text into the termina
 Execute this in the cloned repo folder
 `docker build -t python-flask-demo .`
 
-Start Container (Command -p opens the INTERNAL Port in the container where our app runs also on our LAPTOP, so the browser can reach it):
+Start Container (Command -p allows that the INTERNAL Port 8000 in the container where our app runs also is opened on our LAPTOP, so the browser can reach it):
 `docker run -p 8000:8000 python-flask-demo`
+
+This way all traffic to "http://localhost:8000" that we enter into the browser, will get forwarded to the container app
 
 
