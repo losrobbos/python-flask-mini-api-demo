@@ -19,13 +19,15 @@ A Virtual environment is a way to install packages just on a project level, so j
 
 ## Activate Environment
 
-Now first ACTIVATE this virtual environment:
+Now first ACTIVATE this virtual environment (in the terminal):
 
 Linux / Mac:
 `source venv/Scripts/activate`
 
 Windows:
 `venv\Scripts\activate`
+
+Now your terminal should always, after every command you type, e.g. "ls", print "(venv)" at the bottom, to assure you, you are in that virtual environment.
 
 Now with the "venv" active, if you install any packages, they will get installed only locally into your folder.
 
