@@ -60,7 +60,7 @@ When you go there, you should see a welcome message.
 
 By the way: Also to START the app, you need the "venv" activated. Not just during installation!
 
-Otherwises Python will look for the dependencies GLOBALLY on your system and will likely not find it there.
+Otherwise Python will look for the dependencies GLOBALLY on your system and will likely not find it there.
 So always activate the venv before you start the project (see steps in "activate environment" above)
 
 ## Start in Docker Container
