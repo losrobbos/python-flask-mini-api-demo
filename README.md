@@ -69,7 +69,7 @@ Test if Docker is installed:
 `docker --version`
 
 Testen if Docker Engine is running:
-`docker ps` // 
+`docker ps` // lists all running docker containers
 
 It should give an output like this:
 ```
