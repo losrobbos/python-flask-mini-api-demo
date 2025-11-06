@@ -81,7 +81,7 @@ If an error occurs, the docker engine / daemon is not started.
 Test a "Hello World" Container:
 `docker run hello-world`
 
-This command should print some hello world text into the terminal and then stop.
+This command should print some (quite lengthy) hello world text into the terminal and then stop.
 
 ### Build Python App Docker Image
 
