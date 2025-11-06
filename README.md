@@ -61,10 +61,32 @@ By the way: Also to START the app, you need the "venv" activated. Not just durin
 Otherwises Python will look for the dependencies GLOBALLY on your system and will likely not find it there.
 So always activate the venv before you start the project (see steps in "activate environment" above)
 
-## Wenn Docker bei euch läuft
+## Start in Docker Container
 
-Image builden:
+Test if Docker is installed:
+`docker --version`
+
+Testen if Docker Engine is running:
+`docker ps` // 
+
+It should give an output like this:
+```
+$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+```
+If an error occurs, the docker engine / daemon is not started.
+
+Test a "Hello World" Container:
+`docker run hello-world`
+
+This command should print some hello world text into the terminal and then stop.
+
+### Build Python App Docker Image
+
+Execute this in the cloned repo folder
 `docker build -t python-flask-demo .`
 
-Container starten (gibt internern Port 8000 auch auf dem Laptop auf Port 8000 frei => der Browser kann rankommen):
+Start Container (Command -p opens the INTERNAL Port in the container where our app runs also on our LAPTOP, so the browser can reach it):
 `docker run -p 8000:8000 python-flask-demo`
+
+
