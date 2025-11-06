@@ -25,7 +25,7 @@ Linux / Mac:
 `source venv/Scripts/activate`
 
 Windows:
-`venv\Scripts/activate`
+`venv\Scripts\activate`
 
 Now with the "venv" active, if you install any packages, they will get installed only locally into your folder.
 
